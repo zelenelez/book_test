@@ -4,48 +4,70 @@
 - part: "Моделирање"
   chapters: 
   - file: 01/1_modeling
+    title: "Видови модели" 
   
 - part: "Кодирање на SIR"
   chapters:
   - file: 02/2_equations
+    title: "Математички модел"
   - file: 02/2_2_1_scenario
+    title: "Едноставни симулации"
   - file: 02/2_2_2_D
+    title: "Интерактивен график D"
   - file: 02/2_2_3_gamma
+    title: "Интерактивен график &#x2C85;"
   - file: 02/2_2_4_beta
+    title: "Интерактивен график &#946;"
 
 - part: "Проширување на SIR" 
   chapters: 
   - file: 03/3_states
+    title: "Транзиции на состојби"
   - file: 03/3_1
+    title: "SEIR модел"
   - file: 03/3_2
+    title: "SEIRD модел"
   
 - part: "Временски зависни променливи"
   chapters: 
   - file: 04/4_main
+    title: "Листа параметри"
   - file: 04/4_1_quarantine
+    title: "Воведување карантин"
   - file: 04/4_2_r0
+    title: "Временски зависно R&#8320;"
   - file: 04/4_3_age
+    title: "Временски зависно &#945;"
+    
   
   
 - part: "Erdős–Rényi мрежи"
   chapters: 
   - file: 05/5_networkModels
-  - file: 05/5_1_er-networks 
+    title: "Мрежи vs. равенки"
+  - file: 05/5_1_er-networks
+    title: "ER мрежи за вируси"  
   - file: 05/5_2_contact-tracing
+    title: "Следење на контакти"
   - file: 05/5_3_epidemic-threshold
+    title: "Threshold на епидемија"
   - file: 05/5_4_power-law
+    title: "Power-law мрежи за вируси"
 
 - part: "Имунитет на стадо"
   chapters: 
   - file: 06/6_herd-explained
+    title: "Објаснување и равенки"
   - file: 06/6_1_herd-immunity
+    title: "Mean degree на мрежа"
   - file: 06/6_2_prob-equations
+    title: "Равенки на веројатност"
 
 - part: "Дополнителни ресурси"
   chapters:
   - file: bibs 
-    title: Референци 
+    title: "Референци"
   - file: intresting
-    title: Интересни статии
+    title: "Интересни статии"
   - url: https://github.com/zelenkastiot/COVID-19_book
-    title: GitHub repository 
+    title: "GitHub repository" 

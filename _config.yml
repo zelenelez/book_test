@@ -1,8 +1,8 @@
 # Book settings
-title                       : Test book
+title                       : Имунитет на стадо
 author                      : Kiril Zelenkovski
 copyright                   : "2020"  
-logo                        : logo.png  
+logo                        : images/virus.png  
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 
 execute:
@@ -11,7 +11,7 @@ execute:
 only_build_toc_files: true 
 
 html:
-  favicon                   : ""  
+  favicon                   : images/favicon.ico 
   use_edit_page_button      : true  
   use_repository_button     : true  
   use_issues_button         : true  
