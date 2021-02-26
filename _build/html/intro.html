@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to your Jupyter Book &#8212; Test book</title>
+    <title>Вовед &#8212; Test book</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -43,18 +43,19 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Content in Jupyter Book" href="content.html" />
+    <link rel="next" title="&lt;no title&gt;" href="01_modelingModels/1_modeling.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -73,8 +74,6 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="index.html">
   
-  <img src="_static/logo.png" class="logo" alt="logo">
-  
   
   <h1 class="site-logo" id="site-title">Test book</h1>
   
@@ -87,29 +86,247 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="reference internal" href="#">
-   Welcome to your Jupyter Book
+   Вовед
   </a>
  </li>
 </ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Кодирање на SIR
+ </span>
+</p>
 <ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="content.html">
-   Content in Jupyter Book
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_equations.html">
+   Моделирање на заразна болест
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="markdown.html">
-     Markdown Files
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="notebooks.html">
-     Content with notebooks
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_2_1_scenario.html">
+   Програмирање на моделот
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_2_2_D.html">
+   Интерактивен график параметар
+   <span class="math notranslate nohighlight">
+    \(D\)
+   </span>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_2_3_gamma.html">
+   Интерактивен график параметар
+   <span class="math notranslate nohighlight">
+    \(\gamma\)
+   </span>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_2_4_beta.html">
+   Интерактивен график параметар
+   <span class="math notranslate nohighlight">
+    \(\beta\)
+   </span>
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Проширување на SIR
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_beyondSIR/3_states.html">
+   Проширување на SIR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_beyondSIR/3_1.html">
+   SEIR модел
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_beyondSIR/3_2.html">
+   SEIRD модел
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Временски зависни променливи
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_timeDependent/4_main.html">
+   Временски зависни променливи
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_timeDependent/4_1_quarantine.html">
+   Воведување на карантин
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_timeDependent/4_2_r0.html">
+   Временски зависно
+   <span class="math notranslate nohighlight">
+    \(R_0\)
+   </span>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_timeDependent/4_3_age.html">
+   Временски зависно
+   <span class="math notranslate nohighlight">
+    \(\alpha\)
+   </span>
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Erdős–Rényi мрежи
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html">
+   Network models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html#networks">
+   Networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html#complete-networks">
+   Complete networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html#making-fewer-connections">
+   Making fewer connections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html#characterising-a-networks-topology">
+   Characterising a network’s topology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_1_er-networks.html">
+   ER networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_1_er-networks.html#epidemic-spreading-on-er-networks">
+   Epidemic spreading on ER networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_2_contact-tracing.html">
+   Contact tracing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_2_contact-tracing.html#progress-of-an-epidemic">
+   Progress of an epidemic
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_2_contact-tracing.html#contact-trees">
+   Contact trees
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_3_epidemic-threshold.html">
+   Epidemic threshold
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_3_epidemic-threshold.html#the-epidemic-threshold-of-an-er-network">
+   The epidemic threshold of an ER network
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_3_epidemic-threshold.html#id2">
+   100 пати експеримент (во теорија)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_4_power-law.html">
+   Human contact networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_4_power-law.html#social-structures">
+   Social structures
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_4_power-law.html#powerlaw-networks">
+   Powerlaw networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_4_power-law.html#building-a-contact-network">
+   Building a contact network
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Имунитет на стадо
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_herdImmunity/6_herd-explained.html">
+   Објаснување на имнуитет на стадо
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_herdImmunity/6_1_herd-immunity.html">
+   Herd immunity
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_herdImmunity/6_1_herd-immunity.html#immunity-10-000">
+   Immunity (10 000)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_herdImmunity/6_1_herd-immunity.html#the-complexities-of-immunity">
+   The complexities of immunity
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Дополнителни ресурси
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="bibs.html">
+   Референци
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="intresting.html">
+   Интересни статии
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/zelenkastiot/COVID-19_book">
+   GitHub repository
+   <i class="fas fa-external-link-alt">
+   </i>
+  </a>
  </li>
 </ul>
 
@@ -162,6 +379,24 @@
 
         <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/zelenelez/book_test"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/zelenelez/book_test/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/zelenelez/book_test/edit/main/intro.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -176,6 +411,22 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Тема на проектот
+  </a>
+  <ul class="nav section-nav flex-column">
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -183,12 +434,47 @@
         
               <div>
                 
-  <div class="section" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Permalink to this headline">¶</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.</p>
-<p>Check out the content pages bundled with this sample book to get started.</p>
+  <div class="section" id="id1">
+<h1>Вовед<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><strong>Летен семестар, 2020</strong> <br></p>
+<ul class="simple">
+<li><p><strong>Ментор:</strong> Акад. д-р Љупчо Коцарев <br></p></li>
+<li><p><strong>Студенти:</strong> Филип Карафилоски, Кирил Зеленковски <br>
+<br></p></li>
+</ul>
+<div class="section" id="id2">
+<h2>Тема на проектот<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Репродусибилна <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter книга</a> за кратко истражување повразно со параметрите на <em>SIR</em> модел, нивното меѓусебно влијанието претставено со интерактивни графици, <em>Curve Fitting</em> за COVID-19 податоци за <em>Италија</em>.</p>
+<p>Во последните неколку месеци, голем дел data scientists, ентузијасти и луѓе со слободно време почнаа
+да читаат за моделирање на заразни болести. Повеќето од статиите и обидите што кружат на Интернет се
+обидуваат директно, слепо да ги соодвестуваат моделите со бројот на случаеви на COVID19, без спознавање
+на теоријата и логиката позади самите модели.</p>
+<p>Како тема за проектот се одлучивме да се обидеме да го истражиме феноменот и позадината зад моделирањето
+на заразни болести. <em>SIR</em> моделот со своите равенки и параметри ги објаснуваме слично на начинот на кој ние
+самите ги истражувавме со прости примери и <em>Python</em> Jupyter тетратки. Опфаќаме и елаборираме различни варијанти од
+класичниот модел, со додавање на нови компоненти и состојби како и едноставен обид за Curve Fitting за real-world податоци.</p>
+<p>Книгата е: <br></p>
+<p><strong>Интерактивна:</strong> Книгата содржи голем број на интерактивни графици кои ја користат <em>Python</em> библиотеката <a class="reference external" href="https://plotly.com/">Plotly</a>, каде може да се манипулираат исходите на кривите со променување на иницијалните вредности со помош на лизгачи,
+мени со опции и временски зависни лизгачи.</p>
+<p><strong>Репродусибилна:</strong> Тетратките во книгата се комплетно <u>репродусибилни</u> во две инстанци:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gist.github.com/zelenkastiot/ca6f8dc92d1a9722a6e73dfb9ecd3265">Binder</a> (Linux container, <a class="reference external" href="https://blog.jupyter.org/mybinder-org-serves-two-million-launches-7543ae498a2a#:~:text=What%20is%20mybinder.org%3F,a%20collection%20of%20interactive%20notebooks.&amp;text=All%20they%20have%20to%20do,without%20having%20to%20install%20anything.">повеќе за Binder</a>)</p></li>
+<li><p><a class="reference external" href="https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d#:~:text=What%20is%20Google%20Colab%3F,TensorFlow%2C%20PyTorch%2C%20and%20OpenCV.">Google Colab</a> тетратка</p></li>
+</ul>
+<p>За <em>Google Colab</em> потребно е само gmail профил за <em>Binder</em> нема потреба од никакво поврзување.</p>
+<p><strong>Транспаретна:</strong> Ќелиите за код ги заменивме од класичната книга со цел да добиеме изглед на труд притоа да се задржи интерактивноста на фигурите. Доколку читателот би сакал да го разгледува код може да ги прикаже кодот со клинување на <strong>“Toggle code”</strong>, притоа со кликнување на истото копче може да се скријат повторно.</p>
 <div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
@@ -196,8 +482,8 @@ structured.</p>
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "zelenelez/book_test",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -220,7 +506,7 @@ structured.</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="content.html" title="next page">Content in Jupyter Book</a>
+    <a class='right-next' id="next-link" href="01_modelingModels/1_modeling.html" title="next page">&lt;no title&gt;</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -230,6 +516,9 @@ structured.</p>
           By Kiril Zelenkovski<br/>
         
             &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            Test
+          </div>
       </p>
     </div>
   </footer>

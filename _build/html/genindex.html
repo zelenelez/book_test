@@ -43,13 +43,14 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="#" />
@@ -72,8 +73,6 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="index.html">
   
-  <img src="_static/logo.png" class="logo" alt="logo">
-  
   
   <h1 class="site-logo" id="site-title">Test book</h1>
   
@@ -86,29 +85,247 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   Welcome to your Jupyter Book
+   Вовед
   </a>
  </li>
 </ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Кодирање на SIR
+ </span>
+</p>
 <ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="content.html">
-   Content in Jupyter Book
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_equations.html">
+   Моделирање на заразна болест
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="markdown.html">
-     Markdown Files
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="notebooks.html">
-     Content with notebooks
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_2_1_scenario.html">
+   Програмирање на моделот
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_2_2_D.html">
+   Интерактивен график параметар
+   <span class="math notranslate nohighlight">
+    \(D\)
+   </span>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_2_3_gamma.html">
+   Интерактивен график параметар
+   <span class="math notranslate nohighlight">
+    \(\gamma\)
+   </span>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_codingSIR/2_2_4_beta.html">
+   Интерактивен график параметар
+   <span class="math notranslate nohighlight">
+    \(\beta\)
+   </span>
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Проширување на SIR
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_beyondSIR/3_states.html">
+   Проширување на SIR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_beyondSIR/3_1.html">
+   SEIR модел
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_beyondSIR/3_2.html">
+   SEIRD модел
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Временски зависни променливи
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_timeDependent/4_main.html">
+   Временски зависни променливи
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_timeDependent/4_1_quarantine.html">
+   Воведување на карантин
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_timeDependent/4_2_r0.html">
+   Временски зависно
+   <span class="math notranslate nohighlight">
+    \(R_0\)
+   </span>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_timeDependent/4_3_age.html">
+   Временски зависно
+   <span class="math notranslate nohighlight">
+    \(\alpha\)
+   </span>
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Erdős–Rényi мрежи
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html">
+   Network models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html#networks">
+   Networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html#complete-networks">
+   Complete networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html#making-fewer-connections">
+   Making fewer connections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_networkModels.html#characterising-a-networks-topology">
+   Characterising a network’s topology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_1_er-networks.html">
+   ER networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_1_er-networks.html#epidemic-spreading-on-er-networks">
+   Epidemic spreading on ER networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_2_contact-tracing.html">
+   Contact tracing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_2_contact-tracing.html#progress-of-an-epidemic">
+   Progress of an epidemic
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_2_contact-tracing.html#contact-trees">
+   Contact trees
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_3_epidemic-threshold.html">
+   Epidemic threshold
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_3_epidemic-threshold.html#the-epidemic-threshold-of-an-er-network">
+   The epidemic threshold of an ER network
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_3_epidemic-threshold.html#id2">
+   100 пати експеримент (во теорија)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_4_power-law.html">
+   Human contact networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_4_power-law.html#social-structures">
+   Social structures
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_4_power-law.html#powerlaw-networks">
+   Powerlaw networks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_networks/5_4_power-law.html#building-a-contact-network">
+   Building a contact network
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Имунитет на стадо
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_herdImmunity/6_herd-explained.html">
+   Објаснување на имнуитет на стадо
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_herdImmunity/6_1_herd-immunity.html">
+   Herd immunity
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_herdImmunity/6_1_herd-immunity.html#immunity-10-000">
+   Immunity (10 000)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_herdImmunity/6_1_herd-immunity.html#the-complexities-of-immunity">
+   The complexities of immunity
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Дополнителни ресурси
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="bibs.html">
+   Референци
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="intresting.html">
+   Интересни статии
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/zelenkastiot/COVID-19_book">
+   GitHub repository
+   <i class="fas fa-external-link-alt">
+   </i>
+  </a>
  </li>
 </ul>
 
@@ -143,6 +360,22 @@
         
         
         <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/zelenelez/book_test"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/zelenelez/book_test/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
 
 
         <!-- Full screen (wrap in <a> to have style consistency -->
@@ -190,6 +423,9 @@
           By Kiril Zelenkovski<br/>
         
             &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            Test
+          </div>
       </p>
     </div>
   </footer>

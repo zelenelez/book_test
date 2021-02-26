@@ -1,8 +1,48 @@
-# Table of content
-# Learn more at https://jupyterbook.org/customize/toc.html
-#
 - file: intro
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+  numbered: false
+  
+- part: "Кодирање на SIR"
+  chapters:
+  - file: 01_modelingModels/1_modeling
+  - file: 02_codingSIR/2_equations
+  - file: 02_codingSIR/2_2_1_scenario
+  - file: 02_codingSIR/2_2_2_D
+  - file: 02_codingSIR/2_2_3_gamma
+  - file: 02_codingSIR/2_2_4_beta
+
+- part: "Проширување на SIR" 
+  chapters: 
+  - file: 03_beyondSIR/3_states
+  - file: 03_beyondSIR/3_1
+  - file: 03_beyondSIR/3_2
+  
+- part: "Временски зависни променливи"
+  chapters: 
+  - file: 04_timeDependent/4_main
+  - file: 04_timeDependent/4_1_quarantine
+  - file: 04_timeDependent/4_2_r0
+  - file: 04_timeDependent/4_3_age
+  
+  
+- part: "Erdős–Rényi мрежи"
+  chapters: 
+  - file: 05_networks/5_networkModels
+  - file: 05_networks/5_1_er-networks 
+  - file: 05_networks/5_2_contact-tracing
+  - file: 05_networks/5_3_epidemic-threshold
+  - file: 05_networks/5_4_power-law
+
+- part: "Имунитет на стадо"
+  chapters: 
+  - file: 06_herdImmunity/6_herd-explained
+  - file: 06_herdImmunity/6_1_herd-immunity
+  - file: 06_herdImmunity/6_2_prob-equations
+
+- part: "Дополнителни ресурси"
+  chapters:
+  - file: bibs 
+    title: Референци 
+  - file: intresting
+    title: Интересни статии
+  - url: https://github.com/zelenkastiot/COVID-19_book
+    title: GitHub repository 
