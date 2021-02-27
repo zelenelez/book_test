@@ -375,12 +375,20 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#d-t-dead">
-   Извеудвање на состојба $D(t)$  → Починати (Dead)
+   Извеудвање на состојба
+   <span class="math notranslate nohighlight">
+    \(D(t)\)
+   </span>
+   → Починати (Dead)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
-   Програмирање на состојба $D(t)$  → Починати (Dead)
+   Програмирање на состојба
+   <span class="math notranslate nohighlight">
+    \(D(t)\)
+   </span>
+   → Починати (Dead)
   </a>
  </li>
 </ul>
@@ -398,48 +406,47 @@
 <h1>SEIRD модел<a class="headerlink" href="#seird" title="Permalink to this headline">¶</a></h1>
 <hr class="docutils" />
 <div class="section" id="d-t-dead">
-<h2>Извеудвање на состојба $D(t)$  → Починати (Dead)<a class="headerlink" href="#d-t-dead" title="Permalink to this headline">¶</a></h2>
+<h2>Извеудвање на состојба <span class="math notranslate nohighlight">\(D(t)\)</span>  → Починати (Dead)<a class="headerlink" href="#d-t-dead" title="Permalink to this headline">¶</a></h2>
 <p>За заразни болести кои имаат превисоки стапки на смртност оваа состојба е можеби и од најголемо значење. Во моделирање на вакви заразни болести некогаш се додаваат комплетно различни состојби и различна динамика (разгледување на бројот на новородени за време на пандемија, смрттни случаеви кои не се повразни со болеста и сл.). Овие модели можат да стнаат и стануваат се поголеми и потешки кога станува збор за предвидување, бидејќи додавањето на овие нови состојби и параметри можеби одговара на една држава меѓутоа тој модел со тие состојби може да дава комплетно грешни резултати за друга држава.</p>
 <p>Нашата моментална поставеност на транзициите меѓу состојби:</p>
 <p align="center">
 <img src="images\Screenshot_5.png" style="width:85%;">
 </p>
-<p>При додавање на нова состојба многу е важно да се разгледуваат моменталните транзиции и да се согледа каде состојбата што сакаме да ја додадеме има влијание или од која состојба зависи. За нашата нова состојба, $D(t)$, се прашуваме:</p>
+<p>При додавање на нова состојба многу е важно да се разгледуваат моменталните транзиции и да се согледа каде состојбата што сакаме да ја додадеме има влијание или од која состојба зависи. За нашата нова состојба, <span class="math notranslate nohighlight">\(D(t)\)</span>, се прашуваме:</p>
 <br>
 <center> <i> Kога луѓе можат да починат од зараза? </i> </center>
 <br>
 Одговорот е доста јасен: <b>само откако ќе се заразат</b>. Откако една личност ќе се зарази тој или оздравува или починува. Што следува дека  нашата нова транзиција ќе биде од облик $I \rightarrow D$. 
 <p>Се разбира дека смртта не настапува веднаш штом една личност ќе се зарази, за го моделираме ова време воведуваме нов параметар:</p>
 <blockquote>
-<div><p>$\rho$: стапката на денови за еден заразен да почине</p>
+<div><p><span class="math notranslate nohighlight">\(\rho\)</span>: стапката на денови за еден заразен да почине</p>
 </div></blockquote>
-<p>На пр. доколку се потребни 10 денови за еден заразен да почине, тогаш $\rho = \frac{1}{10} = 10 % $.</p>
+<p>На пр. доколку се потребни 10 денови за еден заразен да почине, тогаш <span class="math notranslate nohighlight">\(\rho = \frac{1}{10} = 10 \% \)</span>.</p>
 <p>Единствената работа што недостасува за комплетен модел со транзиции меѓу состојби се веројатностите за транзиција од инфициран во оздравен и од инфициран во починат. За ова ни е потребен параметарот:</p>
 <blockquote>
-<div><p>$\alpha$<strong>:</strong> стапка на смртност (дел од заразените што починуваат)</p>
+<div><p><span class="math notranslate nohighlight">\(\alpha\)</span><strong>:</strong> стапка на смртност (дел од заразените што починуваат)</p>
 </div></blockquote>
-<p>На пр. нека $\alpha=5%$, $\rho=1$ и $\gamma=1$ (луѓе починуваат или оздравуваат за 1 ден) и доколку на почетокот 100 луѓе се заразени, тогаш $5% \cdot 100 = 5$ личности ќе транзитираат во починати, т.е. остануваат $95 % \cdot 100=95$ личности ќе транзитираат во оздравени. Имајќи се во предвид, веројатноста за транзицијата $I \rightarrow D$ е еквивалентна на $\alpha$, додека веројатноста за транзицијата $I\rightarrow R$ е еквивалентна на $(1-\alpha)$.</p>
+<p>На пр. нека <span class="math notranslate nohighlight">\(\alpha=5\%\)</span>, <span class="math notranslate nohighlight">\(\rho=1\)</span> и <span class="math notranslate nohighlight">\(\gamma=1\)</span> (луѓе починуваат или оздравуваат за 1 ден) и доколку на почетокот 100 луѓе се заразени, тогаш <span class="math notranslate nohighlight">\(5\% \cdot 100 = 5\)</span> личности ќе транзитираат во починати, т.е. остануваат <span class="math notranslate nohighlight">\(95 \% \cdot 100=95\)</span> личности ќе транзитираат во оздравени. Имајќи се во предвид, веројатноста за транзицијата <span class="math notranslate nohighlight">\(I \rightarrow D\)</span> е еквивалентна на <span class="math notranslate nohighlight">\(\alpha\)</span>, додека веројатноста за транзицијата <span class="math notranslate nohighlight">\(I\rightarrow R\)</span> е еквивалентна на <span class="math notranslate nohighlight">\((1-\alpha)\)</span>.</p>
 <p>Нашиот нов модел добива нов изглед на транзиции меѓу состојби:</p>
 <p align="center">
 <img src="images\Screenshot_6.png" style="width:85%;">
 </p>
 <p>Од кои се изведуваат следните равенки:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\frac{dS}{dt} &amp;= -\beta \cdot I \cdot \frac{S}{N} \\
-\frac{dE}{dt} &amp;= \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E \\
-\frac{dI}{dt} &amp;= \delta \cdot E - \gamma \cdot (1-\alpha) \cdot I  - \rho \cdot \alpha \cdot I\\
-\frac{dR}{dt} &amp;= \gamma \cdot (1 - \alpha) \cdot I \\
+<p>\begin{align*}
+\frac{dS}{dt} &amp;= -\beta \cdot I \cdot \frac{S}{N} \
+\frac{dE}{dt} &amp;= \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E \
+\frac{dI}{dt} &amp;= \delta \cdot E - \gamma \cdot (1-\alpha) \cdot I  - \rho \cdot \alpha \cdot I\
+\frac{dR}{dt} &amp;= \gamma \cdot (1 - \alpha) \cdot I \
 \frac{dD}{dt} &amp;= \rho \cdot \alpha \cdot I
-\end{align*}\]</div>
+\end{align*}</p>
 </div>
 <div class="section" id="id1">
-<h2>Програмирање на состојба $D(t)$  → Починати (Dead)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>Програмирање на состојба <span class="math notranslate nohighlight">\(D(t)\)</span>  → Починати (Dead)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Со минимални промени од <a class="reference external" href="https://zelenkastiot.github.io/COVID-19_book/03_beyondSIR/subsection/3_1.html">програмирањето на <b>SEIR</b></a>, додаваме иницијални вредности:</p>
 <ul class="simple">
-<li><p>$\delta = \frac{1}{5}$, инкубациски период</p></li>
-<li><p>$\alpha =$ 30%, стапка на смртност</p></li>
-<li><p>$\rho = \frac{1}{14}$, 14 дена од заразување до смртта</p></li>
+<li><p><span class="math notranslate nohighlight">\(\delta = \frac{1}{5}\)</span>, инкубациски период</p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha =\)</span> 30%, стапка на смртност</p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho = \frac{1}{14}\)</span>, 14 дена од заразување до смртта</p></li>
 </ul>
 <p>Се добива следниот графикон:</p>
 <div class="cell docutils container">
@@ -677,7 +684,7 @@ var n,a=t("./lib/build-log"),i=t("./lib/epsilon"),o=t("./lib/intersecter"),s=t("
 </body>
 </html></div></div>
 </div>
-<p>Функцијата <i style = 'color:#ade6e6'>Вкупно</i> е поставена за еден вид на тест за точноста на формулите, бидејќи збирот на S, E, I, R и D мора да биде еднаков на вкупната популација, т.е. $N = S(t)+E(t)+I(t)+R(t)+D(t)$, за било кое $t \in [0,100]$).</p>
+<p>Функцијата <i style = 'color:#ade6e6'>Вкупно</i> е поставена за еден вид на тест за точноста на формулите, бидејќи збирот на S, E, I, R и D мора да биде еднаков на вкупната популација, т.е. <span class="math notranslate nohighlight">\(N = S(t)+E(t)+I(t)+R(t)+D(t)\)</span>, за било кое <span class="math notranslate nohighlight">\(t \in [0,100]\)</span>).</p>
 </div>
 </div>
 
