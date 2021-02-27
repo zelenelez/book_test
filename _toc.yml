@@ -33,9 +33,9 @@
   - file: 04/4_1_quarantine
     title: "Воведување карантин"
   - file: 04/4_2_r0
-    title: "Временски зависно R&#8320;"
+    title: "Временски зависно R0"
   - file: 04/4_3_age
-    title: "Временски зависно &#945;"
+    title: "Временски зависна смрттна стапка"
     
   
   
@@ -44,28 +44,28 @@
   - file: 05/5_networkModels
     title: "Мрежи vs. равенки"
   - file: 05/5_1_er-networks
-    title: "ER мрежи за вируси"  
+    title: "Ширење на вируси на ER мрежи"  
   - file: 05/5_2_contact-tracing
     title: "Следење на контакти"
   - file: 05/5_3_epidemic-threshold
     title: "Threshold на епидемија"
   - file: 05/5_4_power-law
-    title: "Power-law мрежи за вируси"
+    title: " Алтернативна Power-law мрежа"
 
 - part: "Имунитет на стадо"
   chapters: 
   - file: 06/6_herd-explained
-    title: "Објаснување и равенки"
+    title: "Што е имунитет на стадо?"
   - file: 06/6_1_herd-immunity
-    title: "Mean degree на мрежа"
+    title: "Mean degree од симулации"
   - file: 06/6_2_prob-equations
-    title: "Равенки на веројатност"
+    title: "Процент на заразеност"
 
 - part: "Дополнителни ресурси"
   chapters:
   - file: bibs 
     title: "Референци"
   - file: intresting
-    title: "Интересни статии"
+    title: "Интересни статии, видеа"
   - url: https://github.com/zelenkastiot/COVID-19_book
     title: "GitHub repository" 

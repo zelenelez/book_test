@@ -1,8 +1,8 @@
-# Network models
+# Мрежи vs. равенки
 
-# Networks
+**Networks**
 
-# Complete networks
+**Complete networks**
 
 """
 
@@ -141,6 +141,6 @@ ax.legend(loc='center right')
 plt.savefig('images/2_1_network-same-beta-alpha.svg')
 plt.show()
 
-# Making fewer connections
+**Making fewer connections**
 
-# Characterising a network’s topology
+**Characterising a network’s topology**

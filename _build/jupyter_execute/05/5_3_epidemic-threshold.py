@@ -1,6 +1,6 @@
-# Epidemic threshold
+# Threshold на епидемија
 
-# The epidemic threshold of an ER network
+**Threshold на ER мрежа**
 
 import pickle
 
@@ -23,7 +23,7 @@ import seaborn
 matplotlib.style.use('seaborn')
 seaborn.set_context("notebook", font_scale=.65)
 
-## 10 пати експеримент
+**Наш експеримент** 
 
 fig = plt.figure(figsize=(8, 8))
 ax = fig.gca()
@@ -69,7 +69,7 @@ ax.set_title('Epidemic size vs $p_{\\mathit{infect}}$' + ', mean of {r} repetiti
 
 plt.show()
 
-# 100 пати експеримент (во теорија) 
+**100 пати експеримент (во теорија)**
 
 ----- СЛИКА 1 -----
 

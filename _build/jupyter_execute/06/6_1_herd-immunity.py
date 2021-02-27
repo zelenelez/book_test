@@ -1,6 +1,8 @@
-# Herd immunity
+# Mean degree од симулации
 
-## Immunity (10 000)
+Објаснување и равенки
+
+**Имунитет  ЕР, СИР 10 000 јазли**
 
 import numpy
 import networkx
@@ -165,4 +167,5 @@ plt.suptitle('Прогресија на две пандемии', y=1.05)
 plt.savefig('images/4_herd-finals.png', dpi=280, bbox_inches='tight')
 _ = plt.show()
 
-## The complexities of immunity
+**Комплексноста на имунитет**
+

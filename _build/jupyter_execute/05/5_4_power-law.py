@@ -1,10 +1,12 @@
-# Human contact networks
+# Алтернативна Power-law мрежа 
 
-# Social structures
+**Human contact networks**
 
-# Powerlaw networks
+**Social structures**
 
-# Building a contact network
+**Powerlaw networks**
+
+**Building a contact network**
 
 import numpy
 import networkx

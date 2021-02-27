@@ -1,7 +1,7 @@
 # Book settings
 title                       : Имунитет на стадо
-author                      : Кирил Зеленковски
-copyright                   : "Пролет, 2021"  
+author                      : zelenkastiot
+copyright                   : "2021"  
 logo                        : images/virus.png  
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 
@@ -25,9 +25,9 @@ html:
 
 launch_buttons:
   notebook_interface        : "jupyterlab"  
-  binderhub_url             : https://mybinder.org
+  binderhub_url             : "https://mybinder.org"
   thebe                     : false  
-  colab_url                 : https://colab.research.google.com/drive/1vq_Ll-xAgFfW-kkDin5WUucNtY09HUka#scrollTo=1dE2kHUFW7ju
+  colab_url                 : "https://colab.research.google.com/drive/1vq_Ll-xAgFfW-kkDin5WUucNtY09HUka#scrollTo=1dE2kHUFW7ju"
 
 repository:
   url                       : https://github.com/zelenelez/book_test 

@@ -1,4 +1,4 @@
-# ER networks
+# Ширење на вируси на ER мрежи
 
 """
 
@@ -61,8 +61,6 @@ ax.set_ylabel('$N_k$')
 
 plt.savefig('images/2_2_2_degree-distribution-er.png')
 plt.show()
-
-# Epidemic spreading on ER networks
 
 """
 

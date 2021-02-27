@@ -1,4 +1,4 @@
-# Линкови / литература 
+# Референци
 *** 
 
 1. https://www.researchgate.net/publication/329950688_Analysis_of_SIR_epidemic_model_with_information_spreading_of_awareness

@@ -1,6 +1,6 @@
-# Contact tracing
+# Следење на контакти
 
-# Progress of an epidemic
+**Progress of an epidemic**
 
 """
 
@@ -110,7 +110,7 @@ plt.suptitle('Прогресија на епидемија ($p_{\\mathit{infect}
 plt.savefig('images/3_1_Epidemic-progress.png')
 plt.show()
 
-# Contact trees
+**Contact trees**
 
 def drawContactTree(ax, t, ct):
     # turn the infection list into a network

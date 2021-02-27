@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Epidemic threshold &#8212; Имунитет на стадо</title>
+    <title>Threshold на епидемија &#8212; Имунитет на стадо</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -56,8 +56,8 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Human contact networks" href="5_4_power-law.html" />
-    <link rel="prev" title="Contact tracing" href="5_2_contact-tracing.html" />
+    <link rel="next" title="Алтернативна Power-law мрежа" href="5_4_power-law.html" />
+    <link rel="prev" title="Следење на контакти" href="5_2_contact-tracing.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -175,12 +175,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../04/4_2_r0.html">
-   Временски зависно R&amp;#8320;
+   Временски зависно R0
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../04/4_3_age.html">
-   Временски зависно &amp;#945;
+   Временски зависна смрттна стапка
   </a>
  </li>
 </ul>
@@ -192,87 +192,27 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="5_networkModels.html">
-   Network models
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_networkModels.html#networks">
-   Networks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_networkModels.html#complete-networks">
-   Complete networks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_networkModels.html#making-fewer-connections">
-   Making fewer connections
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_networkModels.html#characterising-a-networks-topology">
-   Characterising a network’s topology
+   Мрежи vs. равенки
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="5_1_er-networks.html">
-   ER networks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_1_er-networks.html#epidemic-spreading-on-er-networks">
-   Epidemic spreading on ER networks
+   Ширење на вируси на ER мрежи
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="5_2_contact-tracing.html">
-   Contact tracing
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_2_contact-tracing.html#progress-of-an-epidemic">
-   Progress of an epidemic
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_2_contact-tracing.html#contact-trees">
-   Contact trees
+   Следење на контакти
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Epidemic threshold
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#the-epidemic-threshold-of-an-er-network">
-   The epidemic threshold of an ER network
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#id2">
-   100 пати експеримент (во теорија)
+   Threshold на епидемија
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="5_4_power-law.html">
-   Human contact networks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_4_power-law.html#social-structures">
-   Social structures
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_4_power-law.html#powerlaw-networks">
-   Powerlaw networks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_4_power-law.html#building-a-contact-network">
-   Building a contact network
+   Алтернативна Power-law мрежа
   </a>
  </li>
 </ul>
@@ -284,17 +224,17 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../06/6_herd-explained.html">
-   Објаснување и равенки
+   Што е имунитет на стадо?
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../06/6_1_herd-immunity.html">
-   Mean degree на мрежа
+   Mean degree од симулации
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../06/6_2_prob-equations.html">
-   Равенки на веројатност
+   Процент на заразеност
   </a>
  </li>
 </ul>
@@ -311,7 +251,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../intresting.html">
-   Интересни статии
+   Интересни статии, видеа
   </a>
  </li>
  <li class="toctree-l1">
@@ -426,37 +366,6 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Epidemic threshold
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-epidemic-threshold-of-an-er-network">
-   The epidemic threshold of an ER network
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     10 пати експеримент
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   100 пати експеримент (во теорија)
-  </a>
- </li>
-</ul>
-
-        </nav>
-        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -464,11 +373,9 @@
         
               <div>
                 
-  <div class="section" id="epidemic-threshold">
-<h1>Epidemic threshold<a class="headerlink" href="#epidemic-threshold" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="section" id="the-epidemic-threshold-of-an-er-network">
-<h1>The epidemic threshold of an ER network<a class="headerlink" href="#the-epidemic-threshold-of-an-er-network" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="threshold">
+<h1>Threshold на епидемија<a class="headerlink" href="#threshold" title="Permalink to this headline">¶</a></h1>
+<p><strong>Threshold на ER мрежа</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -500,8 +407,7 @@
 </div>
 </div>
 </div>
-<div class="section" id="id1">
-<h2>10 пати експеримент<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Наш експеримент</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
@@ -570,10 +476,7 @@
 <img alt="../_images/5_3_epidemic-threshold_7_0.png" src="../_images/5_3_epidemic-threshold_7_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="id2">
-<h1>100 пати експеримент (во теорија)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<p><strong>100 пати експеримент (во теорија)</strong></p>
 <p>—– СЛИКА 1 —–</p>
 <p>—– СЛИКА 2 —–</p>
 <p>—– СЛИКА 3 —–</p>
@@ -607,17 +510,17 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="5_2_contact-tracing.html" title="previous page">Contact tracing</a>
-    <a class='right-next' id="next-link" href="5_4_power-law.html" title="next page">Human contact networks</a>
+    <a class='left-prev' id="prev-link" href="5_2_contact-tracing.html" title="previous page">Следење на контакти</a>
+    <a class='right-next' id="next-link" href="5_4_power-law.html" title="next page">Алтернативна Power-law мрежа</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
-          By Кирил Зеленковски<br/>
+          By zelenkastiot<br/>
         
-            &copy; Copyright Пролет, 2021.<br/>
+            &copy; Copyright 2021.<br/>
           <div class="extra_footer">
             Test
           </div>
