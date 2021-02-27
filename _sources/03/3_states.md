@@ -35,14 +35,14 @@
 Состојби се вакви кругови: 
 
 <p align="center">
-<img src="images\Screenshot_1.png" style="width:18%;">
+<img src="images\Screenshot_1.png" width="18%;">
 </p>
 
 
 Транзиции од една состојба во друга се претставени со стрелки, со следната нотација: 
 
 <p align="center">
-<img src="images\Screenshot_2.png" style="width:65%;">
+<img src="images\Screenshot_2.png" width="65%;">
 </p>
 
 <b style='color: #d20b23'>Стапката</b> го претставува времето потребно за една транзиција, <b style='color: #5b96de'>веројатноста</b> е еднаква на веројатноста оваа транзиција да настане за една индивидуа и <b style='color: #7ed321'>популацијата</b> е групата на луѓе на кои се однесува транзицијата.
@@ -59,13 +59,13 @@
 Доколку <b style='color: #d20b23'>стапката</b> на пренесување на заразата е 1, како што заразувањата започнуваат веднаш; <b style='color: #7ed321'>популацијата</b> на која оваа транзиција се однесува е $2\cdot 10 = 20$ индивидуи, секој еден од овие 10 заразени заразува уште 2 други подлежни; <b style='color: #5b96de'>веројатноста</b> е 90% ($\frac{90}{100}$) за подлежните да се заразат. 
 
 <p align="center">
-<img src="images\Screenshot_3.png" style="width:55%;">
+<img src="images\Screenshot_3.png" width="55%;">
 </p>
 
 Генерално доколку ги напишеме сите транзиции кои настануваат од нашите равенки за целиот модел ($I\rightarrow R$, каде $\gamma$ е стапката веројатноста е 1 додека сите оздравуваат): 
 
 <p align="center">
-<img src="images\Screenshot_4.png" style="width:75%;">
+<img src="images\Screenshot_4.png" width="75%;">
 </p>
 
 \begin{align*}
