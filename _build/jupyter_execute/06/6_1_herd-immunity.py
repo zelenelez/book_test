@@ -1,6 +1,6 @@
 # Herd immunity
 
-# Immunity (10 000)
+## Immunity (10 000)
 
 import numpy
 import networkx
@@ -165,4 +165,4 @@ plt.suptitle('Прогресија на две пандемии', y=1.05)
 plt.savefig('images/4_herd-finals.png', dpi=280, bbox_inches='tight')
 _ = plt.show()
 
-# The complexities of immunity
+## The complexities of immunity

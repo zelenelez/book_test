@@ -1,23 +1,21 @@
 - file: intro
   numbered: false
   
-- part: "Моделирање"
-  chapters: 
-  - file: 01/1_modeling
-    title: "Видови модели" 
-  
 - part: "Кодирање на SIR"
   chapters:
+  - file: 01/1_modeling
+    title: "Видови модели" 
   - file: 02/2_equations
     title: "Математички модел"
   - file: 02/2_2_1_scenario
     title: "Едноставни симулации"
-  - file: 02/2_2_2_D
-    title: "Интерактивен график D"
-  - file: 02/2_2_3_gamma
-    title: "Интерактивен график &#x2C85;"
-  - file: 02/2_2_4_beta
-    title: "Интерактивен график &#946;"
+    sections:
+    - file: 02/2_2_2_D
+      title: "Интерактивен график 1"
+    - file: 02/2_2_3_gamma
+      title: "Интерактивен график 2"
+    - file: 02/2_2_4_beta
+      title: "Интерактивен график 3"
 
 - part: "Проширување на SIR" 
   chapters: 
