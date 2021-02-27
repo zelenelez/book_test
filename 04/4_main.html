@@ -53,8 +53,6 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="shortcut icon" href="../_static/virus.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -358,21 +356,21 @@
 <hr class="docutils" />
 <p>Моменталната (проширена) листа од параметри кои ги користевме до сега:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(N\)</span><strong>:</strong> вкупна популација</p></li>
-<li><p><span class="math notranslate nohighlight">\(S(t)\)</span><strong>:</strong> број на подлежни луѓе на ден <span class="math notranslate nohighlight">\(t\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(E(t)\)</span><strong>:</strong> број на изложени луѓе на ден <span class="math notranslate nohighlight">\(t\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(I(t)\)</span><strong>:</strong> број на инфицирани луѓе на ден <span class="math notranslate nohighlight">\(t\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(R(t)\)</span><strong>:</strong> број на оздравени луѓе на ден <span class="math notranslate nohighlight">\(t\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(D(t)\)</span><strong>:</strong> број на починати луѓе на ден <span class="math notranslate nohighlight">\(t\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\beta\)</span><strong>:</strong> очекуваниот број на луѓе на кои заразена личност ја пренесува болеста</p></li>
-<li><p><span class="math notranslate nohighlight">\(D\)</span><strong>:</strong> бројот на денови што личноста ја чува во себе и може да ја шири болеста</p></li>
-<li><p><span class="math notranslate nohighlight">\(\gamma\)</span><strong>:</strong> дел од заразени личности што заздравуваат на ден (<span class="math notranslate nohighlight">\(\gamma= \frac{1}{D}\)</span>)</p></li>
-<li><p><span class="math notranslate nohighlight">\(R_{0}\)</span><strong>:</strong> вкупниот број на луѓе кој една личност заразува (<span class="math notranslate nohighlight">\(R_{0}=\beta \cdot D\)</span>)</p></li>
-<li><p><span class="math notranslate nohighlight">\(\delta\)</span><strong>:</strong> времетраење на инкубациски период</p></li>
-<li><p><span class="math notranslate nohighlight">\(\alpha\)</span><strong>:</strong> стапка на смртност (дел од заразените што починуваат, се среќава  во литература како fatality rate)</p></li>
-<li><p><span class="math notranslate nohighlight">\(\rho\)</span><strong>:</strong> стапката на денови за еден заразен да почине (=1/денови од заразен до смрт)</p></li>
+<li><p>$N$<strong>:</strong> вкупна популација</p></li>
+<li><p>$S(t)$<strong>:</strong> број на подлежни луѓе на ден $t$</p></li>
+<li><p>$E(t)$<strong>:</strong> број на изложени луѓе на ден $t$</p></li>
+<li><p>$I(t)$<strong>:</strong> број на инфицирани луѓе на ден $t$</p></li>
+<li><p>$R(t)$<strong>:</strong> број на оздравени луѓе на ден $t$</p></li>
+<li><p>$D(t)$<strong>:</strong> број на починати луѓе на ден $t$</p></li>
+<li><p>$\beta$<strong>:</strong> очекуваниот број на луѓе на кои заразена личност ја пренесува болеста</p></li>
+<li><p>$D$<strong>:</strong> бројот на денови што личноста ја чува во себе и може да ја шири болеста</p></li>
+<li><p>$\gamma$<strong>:</strong> дел од заразени личности што заздравуваат на ден ($\gamma= \frac{1}{D}$)</p></li>
+<li><p>$R_{0}$<strong>:</strong> вкупниот број на луѓе кој една личност заразува ($R_{0}=\beta \cdot D$)</p></li>
+<li><p>$\delta$<strong>:</strong> времетраење на инкубациски период</p></li>
+<li><p>$\alpha$<strong>:</strong> стапка на смртност (дел од заразените што починуваат, се среќава  во литература како fatality rate)</p></li>
+<li><p>$\rho$<strong>:</strong> стапката на денови за еден заразен да почине (=1/денови од заразен до смрт)</p></li>
 </ul>
-<p>Како што може да видиме од тоа до сега што моделиравме само функциите односно оделите (<span class="math notranslate nohighlight">\(S,E,I,R,D\)</span>) се менуваат преку време што е крајно нереалистично.</p>
+<p>Како што може да видиме од тоа до сега што моделиравме само функциите односно оделите ($S,E,I,R,D$) се менуваат преку време што е крајно нереалистично.</p>
 <p>Пример, најчесто вкупниот број на луѓе што една личност заразува има премала веројатност да биде константно. Истотака карантин и сите мерки што се превземаат како носење маски и рестрикција за движење во некои поголеми маркети го намалува бројот на заразени, каде до сега нашиот моментален модел не ги опфаќа.</p>
 <p>За да се дојде до “пореалистични” сценарија е нужно параметрите да ги направиме да се <strong>менуваат преку време</strong>.</p>
 </div>
