@@ -29,17 +29,17 @@ S\rightarrow E\rightarrow I \rightarrow R
 Се добиваат следните состојби со равенки: 
 
 <p align="center">
-<img src="images\Screenshot_5.png" style="width:75%;">
+<img src="images\Screenshot_5.png" width="75%;">
 </p>
 
 Од овие транзиции ги изведуваме следните равенки:
 
-\begin{equation}
+\begin{align*}
 \frac{dS}{dt} &= -\beta \cdot I \cdot \frac{S}{N} \\
 \frac{dE}{dt} &= \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E \\
 \frac{dI}{dt} &= \delta \cdot E - \gamma \cdot I \\
 \frac{dR}{dt} &= \gamma \cdot I
-\end{equation}
+\end{align*}
 
 ## Програмирање на состојбата $E(t)$  &#x2192; Изложени (Еxposed) 
 

@@ -431,22 +431,22 @@ S\rightarrow E\rightarrow I \rightarrow R
 </ul>
 <p>Се добиваат следните состојби со равенки:</p>
 <p align="center">
-<img src="images\Screenshot_5.png" style="width:75%;">
+<img src="images\Screenshot_5.png" width="75%;">
 </p>
 <p>Од овие транзиции ги изведуваме следните равенки:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f09d5315-f343-4d3a-b426-09ff374241ee">
-<span class="eqno">(1)<a class="headerlink" href="#equation-f09d5315-f343-4d3a-b426-09ff374241ee" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 \frac{dS}{dt} &amp;= -\beta \cdot I \cdot \frac{S}{N} \\
 \frac{dE}{dt} &amp;= \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E \\
 \frac{dI}{dt} &amp;= \delta \cdot E - \gamma \cdot I \\
 \frac{dR}{dt} &amp;= \gamma \cdot I
-\end{equation}\]</div>
+\end{align*}\]</div>
 </div>
 <div class="section" id="id1">
 <h2>Програмирање на состојбата <span class="math notranslate nohighlight">\(E(t)\)</span>  → Изложени (Еxposed)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Програмирањето на оваа состојба е доста директно. Ќе моделираме сценарио со многу голема рата на заразување (<span class="math notranslate nohighlight">\(R_0=5.0\)</span>) на 1 милион популација, со инкубациски период од 5 изминати денови и стапка на оздравување 7 денови.</p>
 <p>Графикот за вредностите на <span class="math notranslate nohighlight">\(S, E, I, R\)</span> во тек од 100 денови:</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python3 imports </span>
 <span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span>
