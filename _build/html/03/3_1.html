@@ -375,12 +375,20 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#e-t-xposed">
-   Изведување на состојбата $E(t)$  → Изложени (Еxposed)
+   Изведување на состојбата
+   <span class="math notranslate nohighlight">
+    \(E(t)\)
+   </span>
+   → Изложени (Еxposed)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
-   Програмирање на состојбата $E(t)$  → Изложени (Еxposed)
+   Програмирање на состојбата
+   <span class="math notranslate nohighlight">
+    \(E(t)\)
+   </span>
+   → Изложени (Еxposed)
   </a>
  </li>
 </ul>
@@ -398,43 +406,41 @@
 <h1>SEIR модел<a class="headerlink" href="#seir" title="Permalink to this headline">¶</a></h1>
 <hr class="docutils" />
 <div class="section" id="e-t-xposed">
-<h2>Изведување на состојбата $E(t)$  → Изложени (Еxposed)<a class="headerlink" href="#e-t-xposed" title="Permalink to this headline">¶</a></h2>
-<p>Многу заразни болести имаат инкубациски период пред да станат заразни, период додека домаќинот (host) сеуште не може да го шири вирусот. Во овој модел овие индувидуи ги нарекуваме <i style = 'color: #CCCC00'>изложени</i>, а состојбата ја означуваме со $E(t)$.</p>
+<h2>Изведување на состојбата <span class="math notranslate nohighlight">\(E(t)\)</span>  → Изложени (Еxposed)<a class="headerlink" href="#e-t-xposed" title="Permalink to this headline">¶</a></h2>
+<p>Многу заразни болести имаат инкубациски период пред да станат заразни, период додека домаќинот (host) сеуште не може да го шири вирусот. Во овој модел овие индувидуи ги нарекуваме <i style = 'color: #CCCC00'>изложени</i>, а состојбата ја означуваме со <span class="math notranslate nohighlight">\(E(t)\)</span>.</p>
 <p>Интиутивно, ќе имаме транзиции помеѓу состојби од следниот облик:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
+<p>\begin{align*}
 S\rightarrow E\rightarrow I \rightarrow R
-\end{align*}\]</div>
+\end{align*}</p>
 <p><i style ='color: blue'>Подлежни</i> луѓе кога стапуваат во контакт со вирусот транзитираат во состојба <i style = 'color: #CCCC00'>изложени</i>, кои по инкубацискиот период транзитираат во <i style = 'color: red'>инфицирани</i> и по своето заздравување транзитираат во <i style = 'color: green'>оздравени</i>.</p>
-<p>Оваа нова транзиција што се додава на овој <strong>SEIR</strong> модел, е таа од облик $S \rightarrow E$, која ја поседува истата насока на транзитирање како и таа во претходниот модел $S \rightarrow I$, за која:</p>
+<p>Оваа нова транзиција што се додава на овој <strong>SEIR</strong> модел, е таа од облик <span class="math notranslate nohighlight">\(S \rightarrow E\)</span>, која ја поседува истата насока на транзитирање како и таа во претходниот модел <span class="math notranslate nohighlight">\(S \rightarrow I\)</span>, за која:</p>
 <ul class="simple">
-<li><p><b style='color: #5b96de'>веројатноста</b> е еквивалентна со веројатноста од транзицијата $S \rightarrow I$(сите подлежни може да бидат изложени)</p></li>
-<li><p><b style='color: #d20b23'>стапката</b> на пренесување а исто еквивалентна од транзицијата $S \rightarrow I$ (изложеноста настанува веднаш)</p></li>
-<li><p><b style='color: #7ed321'>популацијата</b> е исто еквивалентна од транзицијата $S \rightarrow I$, бидејќи заразени индивидуи можат да ја шират болеста и секој еден од нив ја изложува на $\beta$ личности на ден</p></li>
+<li><p><b style='color: #5b96de'>веројатноста</b> е еквивалентна со веројатноста од транзицијата <span class="math notranslate nohighlight">\(S \rightarrow I\)</span>(сите подлежни може да бидат изложени)</p></li>
+<li><p><b style='color: #d20b23'>стапката</b> на пренесување а исто еквивалентна од транзицијата <span class="math notranslate nohighlight">\(S \rightarrow I\)</span> (изложеноста настанува веднаш)</p></li>
+<li><p><b style='color: #7ed321'>популацијата</b> е исто еквивалентна од транзицијата <span class="math notranslate nohighlight">\(S \rightarrow I\)</span>, бидејќи заразени индивидуи можат да ја шират болеста и секој еден од нив ја изложува на <span class="math notranslate nohighlight">\(\beta\)</span> личности на ден</p></li>
 </ul>
-<p>Истотака нема потреба за промена во транзицијата од $I \rightarrow R$. Единствената нова транзиција што се додава е таа од $E \rightarrow I$ за која:</p>
+<p>Истотака нема потреба за промена во транзицијата од <span class="math notranslate nohighlight">\(I \rightarrow R\)</span>. Единствената нова транзиција што се додава е таа од <span class="math notranslate nohighlight">\(E \rightarrow I\)</span> за која:</p>
 <ul class="simple">
 <li><p><b style='color: #5b96de'>веројатноста</b> е 1 (сите што се изложени транзитираат во инфицирани)</p></li>
-<li><p><b style='color: #d20b23'>стапката</b> на пренесување добива нова нотација $\delta$ (делта)</p></li>
-<li><p><b style='color: #7ed321'>популацијата</b> е еднаква на $E$ (сите изложени ќе транзитираат во инфицирани)</p></li>
+<li><p><b style='color: #d20b23'>стапката</b> на пренесување добива нова нотација <span class="math notranslate nohighlight">\(\delta\)</span> (делта)</p></li>
+<li><p><b style='color: #7ed321'>популацијата</b> е еднаква на <span class="math notranslate nohighlight">\(E\)</span> (сите изложени ќе транзитираат во инфицирани)</p></li>
 </ul>
 <p>Се добиваат следните состојби со равенки:</p>
 <p align="center">
 <img src="images\Screenshot_5.png" style="width:75%;">
 </p>
 <p>Од овие транзиции ги изведуваме следните равенки:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d46a009d-a455-4633-9bef-e58b02860f5e">
-<span class="eqno">(1)<a class="headerlink" href="#equation-d46a009d-a455-4633-9bef-e58b02860f5e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-\frac{dS}{dt} &amp;= -\beta \cdot I \cdot \frac{S}{N} \\
-\frac{dE}{dt} &amp;= \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E \\
-\frac{dI}{dt} &amp;= \delta \cdot E - \gamma \cdot I \\
+<p>\begin{equation}
+\frac{dS}{dt} &amp;= -\beta \cdot I \cdot \frac{S}{N} \
+\frac{dE}{dt} &amp;= \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E \
+\frac{dI}{dt} &amp;= \delta \cdot E - \gamma \cdot I \
 \frac{dR}{dt} &amp;= \gamma \cdot I
-\end{equation}\]</div>
+\end{equation}</p>
 </div>
 <div class="section" id="id1">
-<h2>Програмирање на состојбата $E(t)$  → Изложени (Еxposed)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Програмирањето на оваа состојба е доста директно. Ќе моделираме сценарио со многу голема рата на заразување ($R_0=5.0$) на 1 милион популација, со инкубациски период од 5 изминати денови и стапка на оздравување 7 денови.</p>
-<p>Графикот за вредностите на $S, E, I, R$ во тек од 100 денови:</p>
+<h2>Програмирање на состојбата <span class="math notranslate nohighlight">\(E(t)\)</span>  → Изложени (Еxposed)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Програмирањето на оваа состојба е доста директно. Ќе моделираме сценарио со многу голема рата на заразување (<span class="math notranslate nohighlight">\(R_0=5.0\)</span>) на 1 милион популација, со инкубациски период од 5 изминати денови и стапка на оздравување 7 денови.</p>
+<p>Графикот за вредностите на <span class="math notranslate nohighlight">\(S, E, I, R\)</span> во тек од 100 денови:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python3 imports </span>
