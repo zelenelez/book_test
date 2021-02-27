@@ -48,9 +48,9 @@
     <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -455,11 +455,12 @@
 <div class="section" id="id4">
 <h2>Диференцијална равенка<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Ги изведовме и објаснивме сите формули кои ни се потребни за да едноставно да моделираме една заразна болест. Нивниот најчест запис:</p>
-<p>\begin{align*}
-\frac{dS}{dt} &amp;= -\beta \cdot I \cdot \frac{S}{N} \
-\frac{dI}{dt} &amp;= \beta \cdot I \cdot \frac{S}{N} - \gamma \cdot I \
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{dS}{dt} &amp;= -\beta \cdot I \cdot \frac{S}{N} \\
+\frac{dI}{dt} &amp;= \beta \cdot I \cdot \frac{S}{N} - \gamma \cdot I \\
 \frac{dR}{dt} &amp;= \gamma \cdot I
-\end{align*}</p>
+\end{align*}\]</div>
 <p>Ваквите равенки се нарекуваат <strong>едноставни диференцијални равенки</strong> (Ordinary Differential Equations - ODEs). Со користење на истите можеме да ја опишеме <em>промената</em> во бројот на подлежни, заразени како и оздравени. За среќа, директно од овие равенки можеме да ги добиеме: <span class="math notranslate nohighlight">\(S(t), I(t), R(t)\)</span>. Дополнително ни олеснува тоа што со минимално познавање на изводи и <strong>Python</strong> можеме да ги решаваме равенките/моделираме податоците многу брзо.</p>
 </div>
 </div>
@@ -468,8 +469,8 @@
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "zelenelez/book_test",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -500,7 +501,7 @@
     <div class="container">
       <p>
         
-          By Кирил Зеленковски<br/>
+          By Kiril Zelenkovski<br/>
         
             &copy; Copyright 2021.<br/>
           <div class="extra_footer">
