@@ -1,6 +1,6 @@
 # Book settings
-title                       : Имунитет на стадо
-author                      : zelenkastiot
+title                       : "Имунитет на стадо"
+author                      : "Кирил Зеленковски"
 copyright                   : "2021"  
 logo                        : images/virus.png  
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
@@ -16,7 +16,7 @@ html:
   use_repository_button     : true  
   use_issues_button         : true  
   extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  
-  extra_footer              : "Test"  
+  extra_footer              : "Моделирање и симулација [ФИНКИ]"  
   home_page_in_navbar       : true  
   baseurl                   : ""  
   comments:

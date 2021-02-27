@@ -34,12 +34,12 @@ S\rightarrow E\rightarrow I \rightarrow R
 
 Од овие транзиции ги изведуваме следните равенки:
 
-\begin{align*}
+\begin{equation}
 \frac{dS}{dt} &= -\beta \cdot I \cdot \frac{S}{N} \\
 \frac{dE}{dt} &= \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E \\
 \frac{dI}{dt} &= \delta \cdot E - \gamma \cdot I \\
 \frac{dR}{dt} &= \gamma \cdot I
-\end{align*}
+\end{equation}
 
 ## Програмирање на состојбата $E(t)$  &#x2192; Изложени (Еxposed) 
 
