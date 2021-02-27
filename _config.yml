@@ -33,3 +33,6 @@ repository:
   url                       : https://github.com/zelenelez/book_test 
   branch                    : main  
 
+parse:
+  myst_enable_extensions:
+    - amsmath
