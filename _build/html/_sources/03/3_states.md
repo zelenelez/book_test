@@ -35,7 +35,7 @@
 Состојби се вакви кругови: 
 
 <p align="center">
-<img src="images\Screenshot_1.png" width="18%;">
+<img src="\images\Screenshot_1.png" width="18%;">
 </p>
 
 
