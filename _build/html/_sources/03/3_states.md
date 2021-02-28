@@ -34,16 +34,51 @@
 
 Состојби се вакви кругови: 
 
-<p align="center">
-<img src="\images\Screenshot_1.png" width="18%;">
-</p>
+
+```{figure} images/Screenshot_1.png
+---
+width: 18%
+align: center
+name: Signle state 
+---
+Единечна состојба S
+```
 
 
+Од овие транзиции ги изведуваме следните равенки:
+
+\begin{align*}
+\frac{dS}{dt} &= -\beta \cdot I \cdot \frac{S}{N} \\
+\frac{dE}{dt} &= \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E \\
+\frac{dI}{dt} &= \delta \cdot E - \gamma \cdot I \\
+\frac{dR}{dt} &= \gamma \cdot I
+\end{align*}
+
+<!-- #region -->
 Транзиции од една состојба во друга се претставени со стрелки, со следната нотација: 
 
-<p align="center">
-<img src="images\Screenshot_2.png" width="65%;">
-</p>
+
+```{figure} images/Screenshot_2.png
+---
+width: 75%
+align: center
+name: Product explained 
+---
+Визуелен приказ на производот од стапката, веројатноста, популацијата 
+```
+
+
+Од овие транзиции ги изведуваме следните равенки:
+
+\begin{align*}
+\frac{dS}{dt} &= -\beta \cdot I \cdot \frac{S}{N} \\
+\frac{dE}{dt} &= \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E \\
+\frac{dI}{dt} &= \delta \cdot E - \gamma \cdot I \\
+\frac{dR}{dt} &= \gamma \cdot I
+\end{align*}
+<!-- #endregion -->
+
+<!-- #region -->
 
 <b style='color: #d20b23'>Стапката</b> го претставува времето потребно за една транзиција, <b style='color: #5b96de'>веројатноста</b> е еднаква на веројатноста оваа транзиција да настане за една индивидуа и <b style='color: #7ed321'>популацијата</b> е групата на луѓе на кои се однесува транзицијата.
 
@@ -58,15 +93,30 @@
 
 Доколку <b style='color: #d20b23'>стапката</b> на пренесување на заразата е 1, како што заразувањата започнуваат веднаш; <b style='color: #7ed321'>популацијата</b> на која оваа транзиција се однесува е $2\cdot 10 = 20$ индивидуи, секој еден од овие 10 заразени заразува уште 2 други подлежни; <b style='color: #5b96de'>веројатноста</b> е 90% ($\frac{90}{100}$) за подлежните да се заразат. 
 
-<p align="center">
-<img src="images\Screenshot_3.png" width="55%;">
-</p>
+
+```{figure} images/Screenshot_3.png
+---
+width: 55%
+align: center
+name: Example product
+---
+Визуелен приказ на пример од производ 
+```
 
 Генерално доколку ги напишеме сите транзиции кои настануваат од нашите равенки за целиот модел ($I\rightarrow R$, каде $\gamma$ е стапката веројатноста е 1 додека сите оздравуваат): 
 
-<p align="center">
-<img src="images\Screenshot_4.png" width="75%;">
-</p>
+
+
+
+```{figure} images/Screenshot_4.png
+---
+width: 75%
+align: center
+name: General notation
+---
+Генерален запис за сите транизиции за SIR модел
+```
+
 
 \begin{align*}
 \frac{dS}{dt} &= -\beta \cdot I \cdot \frac{S}{N} \\
@@ -81,3 +131,4 @@
 <br>
 
 Сега и покрај ова моделирање на состојби како и моделите испрограмирани во *Python* ние сеуште сме далеку од моделирање на вистински податоци што кружат на интернет. Во оваа моментална состојба овој модел само ни овозможува да разгледаме во какви меѓусебни транзиции влегуваат одредени параметри и какво е нивното влијание преку време. 
+<!-- #endregion -->

@@ -28,9 +28,15 @@ S\rightarrow E\rightarrow I \rightarrow R
 
 Се добиваат следните состојби со равенки: 
 
-<p align="center">
-<img src="images\Screenshot_5.png" width="75%;">
-</p>
+
+```{figure} images/Screenshot_5.png
+---
+width: 75%
+align: center
+name: States
+---
+Транзиции на состојби кај SEIR модел
+```
 
 Од овие транзиции ги изведуваме следните равенки:
 
