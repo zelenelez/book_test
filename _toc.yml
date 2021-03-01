@@ -4,11 +4,11 @@
 - part: "Кодирање на SIR"
   chapters:
   - file: 01/1_modeling
-    title: "Видови модели" 
+    title: "Моделирање на заразна болест" 
   - file: 02/2_equations
-    title: "Математички модел"
+    title: "Математички модели"
   - file: 02/2_2_1_scenario
-    title: "Едноставни симулации"
+    title: "Програмирање на моделот"
     sections:
     - file: 02/2_2_2_D
       title: "Интерактивен график 1"
