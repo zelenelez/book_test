@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Проширување на SIR &#8212; Имунитет на стадо</title>
+    <title>Транзиции на состојби &#8212; Имунитет на стадо</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -104,17 +104,17 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../01/1_modeling.html">
-   Видови модели
+   Моделирање на заразна болест
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../02/2_equations.html">
-   Математички модел
+   Математички модели
   </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../02/2_2_1_scenario.html">
-   Едноставни симулации
+   Програмирање на моделот
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -352,8 +352,17 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
+  <a class="reference internal nav-link" href="#id2">
    Модели како транзиции на состојби
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python">
+   Сега и покрај ова моделирање на состојби како и моделите испрограмирани во
+   <em>
+    Python
+   </em>
+   ние сеуште сме далеку од моделирање на вистински податоци што кружат на интернет. Во оваа моментална состојба овој модел само ни овозможува да разгледаме во какви меѓусебни транзиции влегуваат одредени параметри и какво е нивното влијание преку време.
   </a>
  </li>
 </ul>
@@ -367,9 +376,9 @@
         
               <div>
                 
-  <div class="section" id="sir">
-<h1>Проширување на SIR<a class="headerlink" href="#sir" title="Permalink to this headline">¶</a></h1>
-<hr class="docutils" />
+  <div class="section" id="id1">
+<h1>Транзиции на состојби<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<!-- #raw -->
 <p>Во претходната секција ги разгледувавме параметрите кои влегуваат во почетно моделирање на заразни болести. Во оваа секција ќе разгледуваме истиот модел но од различен - (по) визуелен агол, т.е. ќе ги разгледаме следните проширувања на основниот модел:</p>
 <ul class="simple">
 <li><p>Состојба <strong>“Починати”</strong> → <span class="math notranslate nohighlight">\(D(t)\)</span>, за индивидуи кои починале од заразата</p></li>
@@ -377,8 +386,8 @@
 <li><p>Временски зависни <span class="math notranslate nohighlight">\(R_0\)</span> вредности што ни овозможуваат да моделираме карантин, комплетни изолации и сл.</p></li>
 <li><p>Возрасно и ресурсно зависни стапки на смртност, што ни возможуваат да моделираме популации со многу млади/возрасни луѓе, преокупирани болници и сл.</p></li>
 </ul>
-<div class="section" id="id1">
-<h2>Модели како транзиции на состојби<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h2>Модели како транзиции на состојби<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Краток преглед на променливите кои досега ги дефиниравме:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(N\)</span><strong>:</strong> вкупна популација</p></li>
@@ -400,9 +409,12 @@
 <p>Во изведувањето на равенките, интиутивно ги разгледавме формулите како насоки што ни кажуваат што ќе се случи со популацијата <em>следниот ден</em> (на пр., кога 10 луѓе се заразени (<span class="math notranslate nohighlight">\(I\)</span>) и времето потребно за оздравување е со рата <span class="math notranslate nohighlight">\(\frac{1}{5}\)</span> (<span class="math notranslate nohighlight">\(\gamma\)</span>), тогаш бројот на оздравени луѓе следниот ден треба да се зголеми за <span class="math notranslate nohighlight">\(\frac{1}{5}\cdot 10 = 2\)</span>).</p>
 <p>Сега нашето разбирање за овие равенки како насоки или транзиции од едена состојба S, I или R во друга ќе го потврдиме со следните анализи. Ова воведување на транизиции од една во друга состојба ќе ни озвозможи поголема прегледност при рабоотење со равенките кога ќе воведеме повеќе параметри.</p>
 <p>Состојби се вакви кругови:</p>
-<div class="figure align-center" id="signle-state">
-<a class="reference internal image-reference" href="../_images/Screenshot_1.png"><img alt="../_images/Screenshot_1.png" src="../_images/Screenshot_1.png" style="width: 18%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Единечна состојба S</span><a class="headerlink" href="#signle-state" title="Permalink to this image">¶</a></p>
+<div class="figure align-default" id="id3">
+<img alt="../_images/Screenshot_1.png" src="../_images/Screenshot_1.png" />
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">width: 18%
+align: center
+name: Signle state
+Единечна состојба S</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <p>Од овие транзиции ги изведуваме следните равенки:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -412,11 +424,13 @@
 \frac{dI}{dt} &amp;= \delta \cdot E - \gamma \cdot I \\
 \frac{dR}{dt} &amp;= \gamma \cdot I
 \end{align*}\]</div>
-<!-- #region -->
 <p>Транзиции од една состојба во друга се претставени со стрелки, со следната нотација:</p>
-<div class="figure align-center" id="product-explained">
-<a class="reference internal image-reference" href="../_images/Screenshot_2.png"><img alt="../_images/Screenshot_2.png" src="../_images/Screenshot_2.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Визуелен приказ на производот од стапката, веројатноста, популацијата</span><a class="headerlink" href="#product-explained" title="Permalink to this image">¶</a></p>
+<div class="figure align-default" id="id4">
+<img alt="../_images/Screenshot_2.png" src="../_images/Screenshot_2.png" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">width: 75%
+align: center
+name: Product explained
+Визуелен приказ на производот од стапката, веројатноста, популацијата</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 <p>Од овие транзиции ги изведуваме следните равенки:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -426,8 +440,6 @@
 \frac{dI}{dt} &amp;= \delta \cdot E - \gamma \cdot I \\
 \frac{dR}{dt} &amp;= \gamma \cdot I
 \end{align*}\]</div>
-<!-- #endregion -->
-<!-- #region -->
 <p><b style='color: #d20b23'>Стапката</b> го претставува времето потребно за една транзиција, <b style='color: #5b96de'>веројатноста</b> е еднаква на веројатноста оваа транзиција да настане за една индивидуа и <b style='color: #7ed321'>популацијата</b> е групата на луѓе на кои се однесува транзицијата.</p>
 <br>
 <br>
@@ -438,14 +450,20 @@
 <li><p><span class="math notranslate nohighlight">\(N=100\)</span> (10 зразени, 90 подлежни)</p></li>
 </ul>
 <p>Доколку <b style='color: #d20b23'>стапката</b> на пренесување на заразата е 1, како што заразувањата започнуваат веднаш; <b style='color: #7ed321'>популацијата</b> на која оваа транзиција се однесува е <span class="math notranslate nohighlight">\(2\cdot 10 = 20\)</span> индивидуи, секој еден од овие 10 заразени заразува уште 2 други подлежни; <b style='color: #5b96de'>веројатноста</b> е 90% (<span class="math notranslate nohighlight">\(\frac{90}{100}\)</span>) за подлежните да се заразат.</p>
-<div class="figure align-center" id="example-product">
-<a class="reference internal image-reference" href="../_images/Screenshot_3.png"><img alt="../_images/Screenshot_3.png" src="../_images/Screenshot_3.png" style="width: 55%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Визуелен приказ на пример од производ</span><a class="headerlink" href="#example-product" title="Permalink to this image">¶</a></p>
+<div class="figure align-default" id="id5">
+<img alt="../_images/Screenshot_3.png" src="../_images/Screenshot_3.png" />
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">width: 55%
+align: center
+name: Example product
+Визуелен приказ на пример од производ</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
 <p>Генерално доколку ги напишеме сите транзиции кои настануваат од нашите равенки за целиот модел (<span class="math notranslate nohighlight">\(I\rightarrow R\)</span>, каде <span class="math notranslate nohighlight">\(\gamma\)</span> е стапката веројатноста е 1 додека сите оздравуваат):</p>
-<div class="figure align-center" id="general-notation">
-<a class="reference internal image-reference" href="../_images/Screenshot_4.png"><img alt="../_images/Screenshot_4.png" src="../_images/Screenshot_4.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Генерален запис за сите транизиции за SIR модел</span><a class="headerlink" href="#general-notation" title="Permalink to this image">¶</a></p>
+<div class="figure align-default" id="id6">
+<img alt="../_images/Screenshot_4.png" src="../_images/Screenshot_4.png" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">width: 75%
+align: center
+name: General notation
+Генерален запис за сите транизиции за SIR модел</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -456,9 +474,10 @@
 <br>
 <p>Можеме да заклучиме од последниот трансформатор, стрелките што покажуваат од една состојба во друга се додаваат во равенката; стрелките кои покажуваат надвор од една состојба се одземаат.</p>
 <br>
-<p>Сега и покрај ова моделирање на состојби како и моделите испрограмирани во <em>Python</em> ние сеуште сме далеку од моделирање на вистински податоци што кружат на интернет. Во оваа моментална состојба овој модел само ни овозможува да разгледаме во какви меѓусебни транзиции влегуваат одредени параметри и какво е нивното влијание преку време.</p>
-<!-- #endregion -->
 </div>
+<div class="section" id="python">
+<h2>Сега и покрај ова моделирање на состојби како и моделите испрограмирани во <em>Python</em> ние сеуште сме далеку од моделирање на вистински податоци што кружат на интернет. Во оваа моментална состојба овој модел само ни овозможува да разгледаме во какви меѓусебни транзиции влегуваат одредени параметри и какво е нивното влијание преку време.<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<!-- #endraw --></div>
 </div>
 
     <script type="text/x-thebe-config">
