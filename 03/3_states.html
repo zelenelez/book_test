@@ -308,9 +308,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/03/3_states.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/03/3_states.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -331,7 +331,7 @@
             href="https://github.com/zelenelez/book_test/issues/new?title=Issue%20on%20page%20%2F03/3_states.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/zelenelez/book_test/edit/main/03/3_states.md"><button
+        <a class="edit-button" href="https://github.com/zelenelez/book_test/edit/main/03/3_states.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -345,6 +345,31 @@
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/zelenelez/book_test/main?urlpath=lab/tree/03/3_states.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/drive/1vq_Ll-xAgFfW-kkDin5WUucNtY09HUka#scrollTo=1dE2kHUFW7ju/github/zelenelez/book_test/blob/main/03/3_states.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
 
     </div>
 
@@ -361,15 +386,6 @@
    Модели како транзиции на состојби
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python">
-   Сега и покрај ова моделирање на состојби како и моделите испрограмирани во
-   <em>
-    Python
-   </em>
-   ние сеуште сме далеку од моделирање на вистински податоци што кружат на интернет. Во оваа моментална состојба овој модел само ни овозможува да разгледаме во какви меѓусебни транзиции влегуваат одредени параметри и какво е нивното влијание преку време.
-  </a>
- </li>
 </ul>
 
         </nav>
@@ -383,7 +399,7 @@
                 
   <div class="section" id="id1">
 <h1>Транзиции на состојби<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<!-- #raw -->
+<hr class="docutils" />
 <p>Во претходната секција ги разгледувавме параметрите кои влегуваат во почетно моделирање на заразни болести. Во оваа секција ќе разгледуваме истиот модел но од различен - (по) визуелен агол, т.е. ќе ги разгледаме следните проширувања на основниот модел:</p>
 <ul class="simple">
 <li><p>Состојба <strong>“Починати”</strong> → <span class="math notranslate nohighlight">\(D(t)\)</span>, за индивидуи кои починале од заразата</p></li>
@@ -479,10 +495,8 @@ name: General notation
 <br>
 <p>Можеме да заклучиме од последниот трансформатор, стрелките што покажуваат од една состојба во друга се додаваат во равенката; стрелките кои покажуваат надвор од една состојба се одземаат.</p>
 <br>
+<p>Сега и покрај ова моделирање на состојби како и моделите испрограмирани во <em>Python</em> ние сеуште сме далеку од моделирање на вистински податоци што кружат на интернет. Во оваа моментална состојба овој модел само ни овозможува да разгледаме во какви меѓусебни транзиции влегуваат одредени параметри и какво е нивното влијание преку време.</p>
 </div>
-<div class="section" id="python">
-<h2>Сега и покрај ова моделирање на состојби како и моделите испрограмирани во <em>Python</em> ние сеуште сме далеку од моделирање на вистински податоци што кружат на интернет. Во оваа моментална состојба овој модел само ни овозможува да разгледаме во какви меѓусебни транзиции влегуваат одредени параметри и какво е нивното влијание преку време.<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
-<!-- #endraw --></div>
 </div>
 
     <script type="text/x-thebe-config">
