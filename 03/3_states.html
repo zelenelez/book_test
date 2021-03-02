@@ -430,12 +430,9 @@
 <p>Во изведувањето на равенките, интиутивно ги разгледавме формулите како насоки што ни кажуваат што ќе се случи со популацијата <em>следниот ден</em> (на пр., кога 10 луѓе се заразени (<span class="math notranslate nohighlight">\(I\)</span>) и времето потребно за оздравување е со рата <span class="math notranslate nohighlight">\(\frac{1}{5}\)</span> (<span class="math notranslate nohighlight">\(\gamma\)</span>), тогаш бројот на оздравени луѓе следниот ден треба да се зголеми за <span class="math notranslate nohighlight">\(\frac{1}{5}\cdot 10 = 2\)</span>).</p>
 <p>Сега нашето разбирање за овие равенки како насоки или транзиции од едена состојба S, I или R во друга ќе го потврдиме со следните анализи. Ова воведување на транизиции од една во друга состојба ќе ни озвозможи поголема прегледност при рабоотење со равенките кога ќе воведеме повеќе параметри.</p>
 <p>Состојби се вакви кругови:</p>
-<div class="figure align-default" id="id3">
-<img alt="../_images/Screenshot_1.png" src="../_images/Screenshot_1.png" />
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">width: 18%
-align: center
-name: Signle state
-Единечна состојба S</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<div class="figure align-center" id="signle-state">
+<a class="reference internal image-reference" href="../_images/Screenshot_1.png"><img alt="../_images/Screenshot_1.png" src="../_images/Screenshot_1.png" style="width: 18%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Единечна состојба S</span><a class="headerlink" href="#signle-state" title="Permalink to this image">¶</a></p>
 </div>
 <p>Од овие транзиции ги изведуваме следните равенки:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -446,12 +443,9 @@ name: Signle state
 \frac{dR}{dt} &amp;= \gamma \cdot I
 \end{align*}\]</div>
 <p>Транзиции од една состојба во друга се претставени со стрелки, со следната нотација:</p>
-<div class="figure align-default" id="id4">
-<img alt="../_images/Screenshot_2.png" src="../_images/Screenshot_2.png" />
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">width: 75%
-align: center
-name: Product explained
-Визуелен приказ на производот од стапката, веројатноста, популацијата</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<div class="figure align-center" id="product-explained">
+<a class="reference internal image-reference" href="../_images/Screenshot_2.png"><img alt="../_images/Screenshot_2.png" src="../_images/Screenshot_2.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Визуелен приказ на производот од стапката, веројатноста, популацијата</span><a class="headerlink" href="#product-explained" title="Permalink to this image">¶</a></p>
 </div>
 <p>Од овие транзиции ги изведуваме следните равенки:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -471,20 +465,14 @@ name: Product explained
 <li><p><span class="math notranslate nohighlight">\(N=100\)</span> (10 зразени, 90 подлежни)</p></li>
 </ul>
 <p>Доколку <b style='color: #d20b23'>стапката</b> на пренесување на заразата е 1, како што заразувањата започнуваат веднаш; <b style='color: #7ed321'>популацијата</b> на која оваа транзиција се однесува е <span class="math notranslate nohighlight">\(2\cdot 10 = 20\)</span> индивидуи, секој еден од овие 10 заразени заразува уште 2 други подлежни; <b style='color: #5b96de'>веројатноста</b> е 90% (<span class="math notranslate nohighlight">\(\frac{90}{100}\)</span>) за подлежните да се заразат.</p>
-<div class="figure align-default" id="id5">
-<img alt="../_images/Screenshot_3.png" src="../_images/Screenshot_3.png" />
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">width: 55%
-align: center
-name: Example product
-Визуелен приказ на пример од производ</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<div class="figure align-center" id="example-product">
+<a class="reference internal image-reference" href="../_images/Screenshot_3.png"><img alt="../_images/Screenshot_3.png" src="../_images/Screenshot_3.png" style="width: 55%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Визуелен приказ на пример од производ</span><a class="headerlink" href="#example-product" title="Permalink to this image">¶</a></p>
 </div>
 <p>Генерално доколку ги напишеме сите транзиции кои настануваат од нашите равенки за целиот модел (<span class="math notranslate nohighlight">\(I\rightarrow R\)</span>, каде <span class="math notranslate nohighlight">\(\gamma\)</span> е стапката веројатноста е 1 додека сите оздравуваат):</p>
-<div class="figure align-default" id="id6">
-<img alt="../_images/Screenshot_4.png" src="../_images/Screenshot_4.png" />
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">width: 75%
-align: center
-name: General notation
-Генерален запис за сите транизиции за SIR модел</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<div class="figure align-center" id="general-notation">
+<a class="reference internal image-reference" href="../_images/Screenshot_4.png"><img alt="../_images/Screenshot_4.png" src="../_images/Screenshot_4.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Генерален запис за сите транизиции за SIR модел</span><a class="headerlink" href="#general-notation" title="Permalink to this image">¶</a></p>
 </div>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
