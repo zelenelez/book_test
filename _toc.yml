@@ -6,7 +6,7 @@
   - file: 01/1_modeling
     title: "Моделирање на заразна болест" 
   - file: 01/1_1_model_math
-    title: "Математички модели" 
+    title: "Ширење на заразна болест" 
   - file: 02/2_equations
     title: "SIR модел"
   - file: 02/2_2_1_scenario
@@ -19,7 +19,7 @@
     - file: 02/2_2_4_beta
       title: "Интерактивен график 3"
 
-- part: "Проширување на SIR" 
+- part: "Можни проширувања на SIR" 
   chapters: 
   - file: 03/3_states
     title: "Транзиции на состојби"
