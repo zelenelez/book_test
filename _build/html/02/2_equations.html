@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Математички модели &#8212; Имунитет на стадо</title>
+    <title>SIR модел &#8212; Имунитет на стадо</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -59,7 +59,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Програмирање на моделот" href="2_2_1_scenario.html" />
-    <link rel="prev" title="Моделирање на заразна болест" href="../01/1_modeling.html" />
+    <link rel="prev" title="Математички модели" href="../01/1_1_model_math.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -107,14 +107,19 @@
    Моделирање на заразна болест
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01/1_1_model_math.html">
+   Математички модели
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Математички модели
+   SIR модел
   </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="2_2_1_scenario.html">
-   Програмирање на моделот
+   Програмирање на модел
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -352,24 +357,19 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sir">
-   SIR модел
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
+  <a class="reference internal nav-link" href="#id1">
    Објаснување на дополнителните параметри
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
+    <a class="reference internal nav-link" href="#id2">
      Сите параметри со своите соодветни дефиниции
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
+  <a class="reference internal nav-link" href="#id3">
    Диференцијална равенка
   </a>
  </li>
@@ -384,12 +384,9 @@
         
               <div>
                 
-  <div class="section" id="id1">
-<h1>Математички модели<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="sir">
+<h1>SIR модел<a class="headerlink" href="#sir" title="Permalink to this headline">¶</a></h1>
 <hr class="docutils" />
-<p>Имаме цел да моделираме заразни болести. Овие болести се шират од еден на друг жител во една популација. Сите научници кои се обидуваат да ги анализираат овие болести се трудат да разберат повеќе променливи, пр: <em>колку брзо се шират овие болести</em>, <em>која група од популацијата е најранлива на нив</em>, <em>колкав број од популацијата починува од вирусот</em> и сл.</p>
-<div class="section" id="sir">
-<h2>SIR модел<a class="headerlink" href="#sir" title="Permalink to this headline">¶</a></h2>
 <p>Еден од најлесните начини да се моделира ваква болест (вирус) што доста често се користи во епидемолошки анализи е <strong>compartmental</strong> модел;  минималниот <strong>SIR-модел</strong> <a href="https://www.researchgate.net/publication/329950688_Analysis_of_SIR_epidemic_model_with_information_spreading_of_awareness">[1]</a>. Ваквиот модел ја дели популацијата на неколку оддели, на пример:</p>
 <ul class="simple">
 <li><p><strong>S</strong>useptible - подлежени на вирусот (што сеуште може да се инфицираат, „здрави“)</p></li>
@@ -403,9 +400,8 @@
 <li><p><span class="math notranslate nohighlight">\(I(t)\)</span> - инфицирани во време <span class="math notranslate nohighlight">\(t\)</span> од започнување на епидемијата</p></li>
 <li><p><span class="math notranslate nohighlight">\(R(t)\)</span> - оздравени во време <span class="math notranslate nohighlight">\(t\)</span> од започнување на епидемијата</p></li>
 </ul>
-</div>
-<div class="section" id="id2">
-<h2>Објаснување на дополнителните параметри<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h2>Објаснување на дополнителните параметри<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Имаме нова заразна болест, болест <strong>X</strong>. За оваа болест, веројатнста заразена личност да ја пренесе болеста на здрава личност е 20%. Просечниот број луѓе со кои оваа личност контактира е 5 личности на ден. Односно, заразена личност се среќава со 5 личности и ја пренесува болеста на секој еден од нив со веројатност од 20%. Очекуваме оваа личност да заразува 1 личност на ден (20% <span class="math notranslate nohighlight">\(\cdot\)</span> 5 = 1). Ова е параметарот:</p>
 <blockquote>
 <div><p><span class="math notranslate nohighlight">\(\beta\)</span> <strong>:</strong> очекуваниот број на луѓе на кои заразена личност ја пренесува болеста</p>
@@ -422,8 +418,8 @@
 <blockquote>
 <div><p><span class="math notranslate nohighlight">\(\gamma= \frac{1}{D}\)</span> <strong>:</strong> рата на заздравување, број на заразени личности што заздравуваат на ден</p>
 </div></blockquote>
-<div class="section" id="id3">
-<h3>Сите параметри со своите соодветни дефиниции<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Сите параметри со своите соодветни дефиниции<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(N\)</span><strong>:</strong> вкупна популација</p></li>
 <li><p><span class="math notranslate nohighlight">\(S(t)\)</span><strong>:</strong> здрави во време <span class="math notranslate nohighlight">\(t\)</span> од започнување на епидемијата</p></li>
@@ -452,8 +448,8 @@
 <p><span class="math notranslate nohighlight">\(R'(t)=\gamma \cdot I(t)\)</span></p>
 </div>
 </div>
-<div class="section" id="id4">
-<h2>Диференцијална равенка<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>Диференцијална равенка<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Ги изведовме и објаснивме сите формули кои ни се потребни за да едноставно да моделираме една заразна болест. Нивниот најчест запис:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -493,7 +489,7 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../01/1_modeling.html" title="previous page">Моделирање на заразна болест</a>
+    <a class='left-prev' id="prev-link" href="../01/1_1_model_math.html" title="previous page">Математички модели</a>
     <a class='right-next' id="next-link" href="2_2_1_scenario.html" title="next page">Програмирање на моделот</a>
 
     </div>

@@ -5,10 +5,12 @@
   chapters:
   - file: 01/1_modeling
     title: "Моделирање на заразна болест" 
+  - file: 01/1_1_model_math
+    title: "Математички модели" 
   - file: 02/2_equations
-    title: "Математички модели"
+    title: "SIR модел"
   - file: 02/2_2_1_scenario
-    title: "Програмирање на моделот"
+    title: "Програмирање на модел"
     sections:
     - file: 02/2_2_2_D
       title: "Интерактивен график 1"
